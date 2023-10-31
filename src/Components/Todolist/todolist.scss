@@ -1,0 +1,49 @@
+.toDoList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .card {
+    height: 50vw;
+    width: 50vw;
+    background-color: var(--light-grey);
+    border-radius: 1vw;
+    padding: 3vw;
+    border: 2px solid rgb(224, 224, 224);
+
+    h1 {
+      font-size: 2vw;
+      margin-bottom: 1vw;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 2.2vw;
+      margin-bottom: 1vw;
+
+      input {
+        height: 100%;
+        width: 80%;
+        padding: 0 0.6vw;
+        border: 2px solid var(--border-grey);
+        border-radius: 0.4vw;
+      }
+
+      .add {
+        height: 100%;
+        width: 15%;
+        border: 2px solid var(--border-grey);
+        border-radius: 0.4vw;
+        transition: width 0.5s ease;
+        cursor: pointer;
+
+        &:hover {
+            width: 18%;
+        }
+      }
+    }
+  }
+}
